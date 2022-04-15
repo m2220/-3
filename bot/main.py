@@ -7,7 +7,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.Invisible, activity=discord.Activity(type=discord.ActivityType.listening, name="Flower Face")) 
+    await client.change_presence(status=discord.Status.inactive, activity=discord.Activity(type=discord.ActivityType.listening, name="Flower Face")) 
 
 
 @client.event
