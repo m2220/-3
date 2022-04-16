@@ -57,6 +57,11 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith(',6'):
+       await message.channel.send('you\'re aware im asking you out, yes?')
+       time.sleep(2)
+       await message.delete()
+
 
 
 
