@@ -16,6 +16,10 @@ async def on_message(message):
         return
 
 #embed:
+
+    elif message.content.lower().strip().startswith(',info'):
+       await message.channel.send('`react with .jupiter`')
+
     if message.content.lower().strip().startswith('.jupiter'):
        embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
