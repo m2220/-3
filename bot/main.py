@@ -62,6 +62,16 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith(',proud'):
+       await message.channel.send('im just so proud of you. words can\'t describe.')
+       time.sleep(2)
+       await message.delete()
+
+    elif message.content.lower().strip().startswith(',other'):
+       await message.channel.send('I want to lay on the kitchen floor with you\n\nI want to do all the things that lovers do\n\nBruised on your face like a watercolour bloom\n\nMoonlight paints your skin... cornflower blue')
+       time.sleep(2)
+       await message.delete()
+
 
 
 
