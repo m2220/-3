@@ -22,6 +22,8 @@ async def on_message(message):
                          value='\n\nhi, i love you.')
        embed_m.set_image(url="https://images.genius.com/02a227b51a5f263b3709ebc76c106200.1000x1000x1.jpg")                
        await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete()
 
     if message.content.lower().strip().startswith('.Back to You'):
        embed_m = discord.Embed(colour=0x131010)
@@ -29,6 +31,8 @@ async def on_message(message):
                          value='\n\ni have an important question.')
        embed_m.set_image(url="https://f4.bcbits.com/img/0012451185_10.jpg")                
        await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete()
 
 #commands:
     elif message.content.lower().strip().startswith('.question'):
