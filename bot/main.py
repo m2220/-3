@@ -22,7 +22,7 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    if message.content.lower().strip().startswith('.command'):
+    if message.content.lower().strip().startswith(',command'):
        embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
                          value='\n\nhuggies')
@@ -32,27 +32,27 @@ async def on_message(message):
        await message.delete()
 
 #commands:
-    elif message.content.lower().strip().startswith('.question1'):
+    elif message.content.lower().strip().startswith(',1'):
        await message.channel.send('https://open.spotify.com/track/7crSKtI09erdDYWLLsP4vi?si=22dddaea3eef4eac')
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('!question2'):
+    elif message.content.lower().strip().startswith(',2'):
        await message.channel.send('https://open.spotify.com/track/7hfi4ZTfV7akmGINh6qYCF?si=848c7ccdbe40411f')
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('@question3'):
+    elif message.content.lower().strip().startswith(',3'):
        await message.channel.send('https://open.spotify.com/track/1IxfE1rd0ngSFP8MSqYiv0?si=b9aa847b86cb4c43')
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('$question4'):
+    elif message.content.lower().strip().startswith(',4'):
        await message.channel.send('https://open.spotify.com/track/3U21A07gAloCc4P7J8rxcn?si=e9f656d468234c54')
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('*question5'):
+    elif message.content.lower().strip().startswith(',5'):
        await message.channel.send('https://open.spotify.com/track/3zWR0zS9p39c0FVkYkHfVF?si=4bebb8580afb480b')
        time.sleep(2)
        await message.delete()
