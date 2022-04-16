@@ -72,6 +72,11 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith(',melt'):
+       await message.channel.send('let it melt :))')
+       time.sleep(2)
+       await message.delete()
+
 
 
 
