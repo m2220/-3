@@ -22,10 +22,10 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    if message.content.lower().strip().startswith(',command'):
+    if message.content.lower().strip().startswith('.jupiter'):
        embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
-                         value='\n\nhuggies')
+                         value='i love you.')
        embed_m.set_image(url="https://media.discordapp.net/attachments/964663907463602206/964754029974532146/Screen_Shot_2022-04-16_at_1.08.00_AM.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
