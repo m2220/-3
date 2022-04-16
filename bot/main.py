@@ -19,8 +19,10 @@ async def on_message(message):
 
     elif message.content.lower().strip().startswith(',info'):
        await message.channel.send('`react with .jupiter`')
+       time.sleep(2)
+       await message.delete()
 
-    if message.content.lower().strip().startswith('.jupiter'):
+    if message.content.lower().strip().startswith('.command'):
        embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
                          value='\n\nhuggies')
@@ -30,23 +32,30 @@ async def on_message(message):
        await message.delete()
 
 #commands:
-    elif message.content.lower().strip().startswith('.question'):
+    elif message.content.lower().strip().startswith('.question1'):
        await message.channel.send('https://open.spotify.com/track/7crSKtI09erdDYWLLsP4vi?si=22dddaea3eef4eac')
+       time.sleep(2)
+       await message.delete()
 
-    elif message.content.lower().strip().startswith('!question'):
+    elif message.content.lower().strip().startswith('!question2'):
        await message.channel.send('https://open.spotify.com/track/7hfi4ZTfV7akmGINh6qYCF?si=848c7ccdbe40411f')
+       time.sleep(2)
+       await message.delete()
 
-    elif message.content.lower().strip().startswith('@question'):
+    elif message.content.lower().strip().startswith('@question3'):
        await message.channel.send('https://open.spotify.com/track/1IxfE1rd0ngSFP8MSqYiv0?si=b9aa847b86cb4c43')
+       time.sleep(2)
+       await message.delete()
 
-    elif message.content.lower().strip().startswith('$question'):
+    elif message.content.lower().strip().startswith('$question4'):
        await message.channel.send('https://open.spotify.com/track/3U21A07gAloCc4P7J8rxcn?si=e9f656d468234c54')
+       time.sleep(2)
+       await message.delete()
 
-    elif message.content.lower().strip().startswith('*question'):
+    elif message.content.lower().strip().startswith('*question5'):
        await message.channel.send('https://open.spotify.com/track/3zWR0zS9p39c0FVkYkHfVF?si=4bebb8580afb480b')
-
-    elif message.content.lower().strip().startswith('#question'):
-       await message.channel.send('https://open.spotify.com/track/63vr7fhaIB6Zq7YOJ1xqJm?si=b71f96b22bb348e0')
+       time.sleep(2)
+       await message.delete()
 
 
 
