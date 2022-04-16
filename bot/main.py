@@ -16,7 +16,7 @@ async def on_message(message):
         return
 
 #embed:
-    if message.content.lower().strip().startswith('.Jupiter'):
+    if message.content.lower().strip().startswith('Jupiter*'):
        embed_m = discord.Embed(colour=0x131010)
        embed_m.add_field(name="~",
                          value='hihihi')
