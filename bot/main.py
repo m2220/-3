@@ -45,9 +45,6 @@ async def on_message(message):
     elif message.content.lower().strip().startswith('*question'):
        await message.channel.send('https://open.spotify.com/track/3zWR0zS9p39c0FVkYkHfVF?si=4bebb8580afb480b')
 
-    elif message.content.lower().strip().startswith('^question'):
-       await message.channel.send('https://open.spotify.com/track/3zWR0zS9p39c0FVkYkHfVF?si=4bebb8580afb480b')
-
     elif message.content.lower().strip().startswith('#question'):
        await message.channel.send('https://open.spotify.com/track/63vr7fhaIB6Zq7YOJ1xqJm?si=b71f96b22bb348e0')
 
