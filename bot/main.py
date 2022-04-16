@@ -16,15 +16,14 @@ async def on_message(message):
         return
 
 #embed:
-    if message.content.lower().strip().startswith('&Jupiter'):
-       embed_m = discord.Embed(colour=0x131010)
+    if message.content.lower().strip().startswith('.jupiter'):
+       embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
-                         value='hihihi')
-       embed_m.set_image(url="https://images.genius.com/02a227b51a5f263b3709ebc76c106200.1000x1000x1.jpg")                
+                         value='\n\nhuggies')
+       embed_m.set_image(url="https://media.discordapp.net/attachments/964663907463602206/964754029974532146/Screen_Shot_2022-04-16_at_1.08.00_AM.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
-
 
 #commands:
     elif message.content.lower().strip().startswith('.question'):
