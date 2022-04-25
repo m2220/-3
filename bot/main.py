@@ -39,11 +39,11 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    if message.content.lower().strip().startswith(''):
+    if message.content.lower().strip().startswith('testing'):
        embed_m = discord.Embed(colour=0x89658d)
        embed_m.add_field(name="~",
-                         value='')
-       embed_m.set_image(url="")                
+                         value='blah')
+       embed_m.set_image(url="https://cdn.discordapp.com/attachments/955556609067741204/968272343635988580/unknown.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
