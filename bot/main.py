@@ -17,7 +17,7 @@ async def on_message(message):
 
 #embed:
 
-   ''' elif message.content.lower().strip().startswith(''):
+    elif message.content.lower().strip().startswith(''):
        await message.channel.send('')
        time.sleep(2)
        await message.delete()
@@ -47,7 +47,7 @@ async def on_message(message):
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
-'''
+
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
